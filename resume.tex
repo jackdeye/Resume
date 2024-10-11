@@ -1,0 +1,249 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Resume}
+\author{William Deye}
+\date{\today}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingBoldNotBold}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \text{\small #2} \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingT}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\textit{\footnotesize{#2}}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#4}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+\newcommand{\resumeSubSubheading}[2]{
+ \vspace{-2pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape William Deye} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ (240) 579-8400 ~
+    \href{mailto:w.jack.deye@gmail.com}{\faEnvelope\ \underline{w.jack.deye@gmail.com}} ~ 
+    \faMapMarker \ Los Angeles, CA ~ 
+    \faGithub \ \href{https://github.com/jackdeye}{github.com/jackdeye}
+    \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of California, Los Angeles}{Expected June 2027}
+      {B.S. in Mathematics of Computation}{GPA: 3.8/4.0}
+      
+      {\small{\textbf{Relevant Coursework:} Differential Equations, Linear Algebra, Data Structures and Algorithms, Software Construction, Computer Organization, Mathematical Modeling, Probability and Statistics, Number Theory, Combinatorics}}  
+      
+    {\small{\textbf{Activities:}
+    ACM Hack, Bruin Racing: Super Mileage Vehicle, Club Sports: Powerlifting }}
+  \resumeSubHeadingListEnd
+  \vspace{-16pt}
+
+    \resumeSubHeadingListStart
+      \resumeSubheadingBoldNotBold
+      {Gonzaga College High School}{}
+      {Grade: Salutatorian}{}
+      
+      {\small{\textbf{Awards:} 2nd/100+ Nationally in the General Aviation Manufacturers Association Design Challenge, MATHCOUNTS Community Coaching Scholarship National Finalist}}  
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+  %-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {National Institute of Standards and Technology}{Gaithersburg, Maryland}
+      {Guest Researcher}{September 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem {Continuing mathematical research, using radial basis functions to approximate partial integrodifferential equations to model Biological Field Effect Transistors.}
+        \resumeItem {Collaborating with researchers at NIST and developing custom optimization techniques and neural networks in MATLAB and C.}
+        \resumeItemListEnd
+    \resumeSubSubheading
+    {Summer Undergraduate Research Fellow}{June 2024 -- September 2024}
+          \resumeItemListStart
+                \resumeItem {Conducted math research under mentorship, modeled a biosensor that detects molecular binding with surface potential.}
+                \resumeItem{Implemented a neural network to model differential equations using various analytical and numerical methods. Analyzed model convergence in MATLAB.}
+                \resumeItem {Compiled data and showcased findings and custom analytical and numerical techniques.}
+                \resumeItem {Improved convergence of model from first order to fifth order.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Multithreaded Mandelbrot Renderer} $|$ \emph{C++, SDL2, Graphical User Interface}}{\ }
+          \resumeItemListStart
+            \resumeItem{Designed a graphical Mandelbrot Set renderer using the SDL library that utilizes multiprocessing.}
+            \resumeItem{Implemented a synchronized queue of functions with atomics and mutexes.}
+            \resumeItem{Implemented arbitrary length precision for infinite zoom capabilities.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+        \resumeProjectHeading
+          {\textbf{TUI Derivative Calculator} $|$ \emph{Java, Textual User Interface}}{\ }
+          \resumeItemListStart
+            \resumeItem{Created RPN calculator that calculates and simplifies derivatives of algebraic functions.}
+            \resumeItem{Learned programming concepts such as abstract syntax trees and shunting yard algorithm.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+        \resumeProjectHeading
+          {\textbf{UNIFIT (Fullstack Website)} $|$ \emph{ReactJS, NodeJS, MongoDB, ExpressJS, Material UI}}{\ }
+          \resumeItemListStart
+            \resumeItem{Developed a platform for university students to rent, buy, and sell clothes on college campuses}
+            \resumeItem{Created forms for making accounts, posting items, and other similar tasks. Created the ability to edit posts, and created a homepage with parallax scrolling images. Implemented user account creation and deletion.}
+            \resumeItem{Led website design and security. Protected website against URL injection attacks.}
+          \resumeItemListEnd
+          \vspace{-3pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+%-----------Volunteering Experience-----------
+\section{Volunteering Experience}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Gonzaga-WJA Science Fair} \hfill { September 2021--February 2023}
+     \vspace{-7pt}
+    \resumeItemListStart
+        \resumeItem{Co-founded, coordinated, and participated in a science fair collaboration with Title-1 middle school where 24 students were paired with high school students.}
+        \resumeItem{The collaboration has continued for 4 years and has served 100+ youth since its founding.}
+    \resumeItemListEnd
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+%-----------Technical Skills-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Programming Languages} {\ }
+     \vspace{-7pt}
+    \resumeItemListStart
+        \resumeItem{\textbf{Proficient:}{ C/C++, MATLAB, Java, Git}}
+        \resumeItem{\textbf{Familiar:}{ Python, JavaScript/React, Bash}}
+    \resumeItemListEnd
+
+    }}
+ \end{itemize}
+ \vspace{-3pt}
+
+
+\vspace{-5.5mm}
+ 
+\end{document}
